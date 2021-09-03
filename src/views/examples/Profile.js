@@ -23,7 +23,7 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
-import profile from "assets/img/theme/team-4-800x800.jpg";
+import profile from "assets/img/theme/omar800x800.png";
 
 class Profile extends React.Component {
   componentDidMount() {
@@ -80,75 +80,46 @@ class Profile extends React.Component {
                         </a>
                       </div>
                     </Col>
-                    <Col
-                      className="order-lg-3 text-lg-right align-self-lg-center"
-                      lg="4"
-                    >
-                      <div className="card-profile-actions py-4 mt-lg-0">
-                        <Button
-                          className="mr-4"
-                          color="info"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                          size="sm"
-                        >
-                          Connect
-                        </Button>
-                        <Button
-                          className="float-right"
-                          color="default"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                          size="sm"
-                        >
-                          Message
-                        </Button>
-                      </div>
-                    </Col>
-                    <Col className="order-lg-1" lg="4">
+                    <Col className="order-lg-1" lg="6">
                       <div className="card-profile-stats d-flex justify-content-center">
                         <div>
-                          <span className="heading">22</span>
-                          <span className="description">Friends</span>
+                          <span className="heading">Projects</span>
+                          <span className="description">2</span>
                         </div>
                         <div>
-                          <span className="heading">10</span>
-                          <span className="description">Photos</span>
+                          <span className="heading">Experience</span>
+                          <span className="description">3 months</span>
                         </div>
                         <div>
-                          <span className="heading">89</span>
-                          <span className="description">Comments</span>
+                          <span className="heading">Cups of tea</span>
+                          <span className="description">100+</span>
                         </div>
                       </div>
                     </Col>
                   </Row>
                   <div className="text-center mt-5">
                     <h3>
-                      Jessica Jones{" "}
-                      <span className="font-weight-light">, 27</span>
+                      Omar Nabeel Humamah{" "}
+                      <span className="font-weight-light">, 23</span>
                     </h3>
-                    <div className="h6 font-weight-300">
+                    <div className="h6 font-weight-300">S
                       <i className="ni location_pin mr-2" />
-                      Bucharest, Romania
+                      Zarqa, Jordan
                     </div>
                     <div className="h6 mt-4">
                       <i className="ni business_briefcase-24 mr-2" />
-                      Solution Manager - Creative Tim Officer
+                      Software developer
                     </div>
                     <div>
                       <i className="ni education_hat mr-2" />
-                      University of Computer Science
+                      ASAC - LTUC
                     </div>
                   </div>
                   <div className="mt-5 py-5 border-top text-center">
                     <Row className="justify-content-center">
                       <Col lg="9">
                         <p>
-                          An artist of considerable range, Ryan — the name taken
-                          by Melbourne-raised, Brooklyn-based Nick Murphy —
-                          writes, performs and records all of his own music,
-                          giving it a warm, intimate feel with a solid groove
-                          structure. An artist of considerable range.
+                          A junior Software developer and Photoshop designer, I've studied English language and literature, but I have a passion for technology, Internet and visual arts. I had courses in software and Web developing, photoshop and similar technical stuff. I worked at many places and my last job experience was at a computer and phone accessories store, my position was a shop assistant. I helped them in online marketing by publishing social media pages for the store’s items. Now, I have a wide experience in software developing languages like HTML, JS and CSS, beside handling editing application like photoshop. And I'm looking to extend it on and on.
                         </p>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
                           Show more
@@ -161,7 +132,7 @@ class Profile extends React.Component {
             </Container>
           </section>
         </main>
-        <SimpleFooter />
+        
       </>
     );
   }
