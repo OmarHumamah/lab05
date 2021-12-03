@@ -18,24 +18,19 @@
 import React from "react";
 // nodejs library that concatenates classes
 
-// import omarsArt from "assets/img/portfolio/omars-art.png";
+import omarsArt from "assets/img/portfolio/omarsArt.png";
+import covid from "assets/img/portfolio/c19vt.png";
+import lastChapter from "assets/img/portfolio/lastC.jpg";
+
 // reactstrap components
-import {
-  Badge,
-  Button,
-  Card,
-  CardBody,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { Badge, Button, Card, CardBody, Container, Row, Col } from "reactstrap";
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
+import CardImg from "reactstrap/lib/CardImg";
 
 
 // index page sections
-
 
 class Landing extends React.Component {
   state = {};
@@ -105,16 +100,16 @@ class Landing extends React.Component {
               <Row className="justify-content-center">
                 <Col lg="12">
                   <Row className="row-grid">
-                    <Col lg="4">
+                    <Col lg="6">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
+                            <i className="ni ni-planet" />
                           </div>
                           <h6 className="text-primary text-uppercase">
                             Omar's art project
                           </h6>
-                          <img />
+                          <CardImg src={omarsArt}/>
                           <p className="description mt-3">
                             It is project still working on to apply my
                             experience in web developing. it is includes my
@@ -142,15 +137,16 @@ class Landing extends React.Component {
                         </CardBody>
                       </Card>
                     </Col>
-                    <Col lg="4">
+                    <Col lg="6">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                            <i className="ni ni-planet" />
                           </div>
                           <h6 className="text-success text-uppercase">
                             201 Project: COVID-19 vaccine tracker
                           </h6>
+                          <CardImg  src={covid}/>
                           <p className="description mt-3">
                             It an application that has a form where you can
                             share your experience after taking a vaccine, a page
@@ -182,57 +178,72 @@ class Landing extends React.Component {
                         </CardBody>
                       </Card>
                     </Col>
-                    <Col lg="2">
+                    <Col lg="6">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
                             <i className="ni ni-planet" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            301 project: Coming soon
+                            301 project: Last Chapter
                           </h6>
-                          <p className="description mt-3">. . .</p>
+                          <CardImg src={lastChapter}/>
+                          <p className="description mt-3">
+                            A simple React app where you can find your favourite
+                            book,Share Your feedback,And find out community
+                            reviews
+                          </p>
                           <div>
                             <Badge color="warning" pill className="mr-1">
-                              ? ? ?
+                              Education
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              ? ? ?
+                              Books
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              ? ? ?
+                              Library
                             </Badge>
                           </div>
                           <Button
                             className="mt-4"
                             color="warning"
-                            href="#pablo"
+                            href="https://lastchapter.netlify.app/"
                             onClick={(e) => e.preventDefault()}
                           >
-                            Learn more
+                            Visit
                           </Button>
                         </CardBody>
                       </Card>
                     </Col>
-                    <Col lg="2">
+                    <Col lg="6">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
                             <i className="ni ni-planet" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            401 project: Coming soon
+                            401 project: Garage mobile
                           </h6>
-                          <p className="description mt-3">. . .</p>
+                          <p className="description mt-3">
+                            It is an application that supports the user to
+                            easily access services related to his car in case of
+                            emergency and others. This app using real-time
+                            events for executing, and presenting an application
+                            that showcases an event driven architecture.
+                            programming concepts: A “hub” server that moderates
+                            all events. Multiple “clients” that connect to the
+                            hub which can .both publish and subscribe to events
+                            Must operate over a network.
+                          </p>
                           <div>
                             <Badge color="warning" pill className="mr-1">
-                              ? ? ?
+                              Cars
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              ? ? ?
+                              Emergency
                             </Badge>
                             <Badge color="warning" pill className="mr-1">
-                              ? ? ?
+                              Services
                             </Badge>
                           </div>
                           <Button
@@ -241,7 +252,7 @@ class Landing extends React.Component {
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
                           >
-                            Learn more
+                            Soon
                           </Button>
                         </CardBody>
                       </Card>
@@ -250,17 +261,6 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <section>
-          <Container>
-            <div>
-              <h3>My background</h3>
-              <Button className="mt-4" color="warning" href="https://photos.google.com/share/AF1QipPgFklxrDlajrv2RDGvbAzER7y4vs2CxeYo-A97jsRt9q_Gej0QcroLs4thsZRoKw/photo/AF1QipPwIkUrb7rMp1dndbdRYhXPjU6TYmJ3ahinSXpa?key=TlVmQXlzTUJFMV83Zm82NjkyVmVDNzVrOHk5SWR3" target='_blank'>
-                Watch
-              </Button>
-            </div>
-            </Container>
-            
           </section>
         </main>
       </>

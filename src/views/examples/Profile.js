@@ -23,7 +23,7 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
-import profile from "assets/img/theme/omar800x800.png";
+import profile from "assets/img/theme/omar.jpg";
 
 class Profile extends React.Component {
   componentDidMount() {
@@ -71,7 +71,7 @@ class Profile extends React.Component {
                   <Row className="justify-content-center">
                     <Col className="order-lg-2" lg="3">
                       <div className="card-profile-image">
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <a href="#pablo" onClick={(e) => e.preventDefault()}>
                           <img
                             alt="..."
                             className="rounded-circle"
@@ -84,11 +84,11 @@ class Profile extends React.Component {
                       <div className="card-profile-stats d-flex justify-content-center">
                         <div>
                           <span className="heading">Projects</span>
-                          <span className="description">2</span>
+                          <span className="description">3</span>
                         </div>
                         <div>
                           <span className="heading">Experience</span>
-                          <span className="description">3 months</span>
+                          <span className="description">4 months</span>
                         </div>
                         <div>
                           <span className="heading">Cups of tea</span>
@@ -102,7 +102,7 @@ class Profile extends React.Component {
                       Omar Nabeel Humamah{" "}
                       <span className="font-weight-light">, 23</span>
                     </h3>
-                    <div className="h6 font-weight-300">S
+                    <div className="h6 font-weight-300">
                       <i className="ni location_pin mr-2" />
                       Zarqa, Jordan
                     </div>
@@ -119,11 +119,29 @@ class Profile extends React.Component {
                     <Row className="justify-content-center">
                       <Col lg="9">
                         <p>
-                          A junior Software developer and Photoshop designer, I've studied English language and literature, but I have a passion for technology, Internet and visual arts. I had courses in software and Web developing, photoshop and similar technical stuff. I worked at many places and my last job experience was at a computer and phone accessories store, my position was a shop assistant. I helped them in online marketing by publishing social media pages for the store’s items. Now, I have a wide experience in software developing languages like HTML, JS and CSS, beside handling editing application like photoshop. And I'm looking to extend it on and on.
+                          A junior Software developer and Photoshop designer,
+                          I've studied English language and literature, but I
+                          have a passion for technology, Internet and visual
+                          arts. I had courses in software and Web developing,
+                          photoshop and similar technical stuff. I worked at
+                          many places and my last job experience was at a
+                          computer and phone accessories store, my position was
+                          a shop assistant. I helped them in online marketing by
+                          publishing social media pages for the store’s items.
+                          Now, I have a wide experience in software developing
+                          languages like HTML, JS and CSS, beside handling
+                          editing application like photoshop. And I'm looking to
+                          extend it on and on.
                         </p>
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
-                          Show more
-                        </a>
+                        <p>
+                          I am a person who could do everything for business, dealing
+                          with computer / smartphone, software, hardware,
+                          network, social media, data analysis / entry /
+                          collecting …etc. Stubborn, I do not give up until I
+                          reach my target. Routine hater, always looking for
+                          development. Looking for a position in software
+                          developing industry.
+                        </p>
                       </Col>
                     </Row>
                   </div>
@@ -132,7 +150,6 @@ class Profile extends React.Component {
             </Container>
           </section>
         </main>
-        
       </>
     );
   }
